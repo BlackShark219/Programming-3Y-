@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\alexproga1_2\bin\Debug\alexproga1_2.exe.config
+C:\Users\User\source\repos\alexproga1_2\bin\Debug\alexproga1_2.exe
+C:\Users\User\source\repos\alexproga1_2\bin\Debug\alexproga1_2.pdb
+C:\Users\User\source\repos\alexproga1_2\obj\Debug\alexproga1_2.csprojAssemblyReference.cache
+C:\Users\User\source\repos\alexproga1_2\obj\Debug\alexproga1_2.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\alexproga1_2\obj\Debug\alexproga1_2.exe
+C:\Users\User\source\repos\alexproga1_2\obj\Debug\alexproga1_2.pdb

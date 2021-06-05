@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Photo_GalleryModelStoreContainer" CdmEntityContainer="Photo_GalleryEntities6">
+    <EntitySetMapping Name="GALLERY_LIST">
+      <EntityTypeMapping TypeName="Photo_GalleryModel.GALLERY_LIST">
+        <MappingFragment StoreEntitySet="GALLERY_LIST">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Gallery_Number" ColumnName="Gallery_Number" />
+          <ScalarProperty Name="Gallery_Name" ColumnName="Gallery_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PICTURE_LIST">
+      <EntityTypeMapping TypeName="Photo_GalleryModel.PICTURE_LIST">
+        <MappingFragment StoreEntitySet="PICTURE_LIST">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Gallery_ID" ColumnName="Gallery_ID" />
+          <ScalarProperty Name="Picture_Number" ColumnName="Picture_Number" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Mini_Version" ColumnName="Mini-Version" />
+          <ScalarProperty Name="Full_Version" ColumnName="Full-Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Photo_GalleryModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\DenLaba02\bin\Debug\DenLaba02.exe.config
+C:\Users\User\source\repos\DenLaba02\bin\Debug\DenLaba02.exe
+C:\Users\User\source\repos\DenLaba02\bin\Debug\DenLaba02.pdb
+C:\Users\User\source\repos\DenLaba02\obj\Debug\DenLaba02.csprojAssemblyReference.cache
+C:\Users\User\source\repos\DenLaba02\obj\Debug\DenLaba02.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\DenLaba02\obj\Debug\DenLaba02.exe
+C:\Users\User\source\repos\DenLaba02\obj\Debug\DenLaba02.pdb

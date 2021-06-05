@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\ConsoleApp228\bin\Release\ConsoleApp228.exe.config
+C:\Users\User\source\repos\ConsoleApp228\bin\Release\ConsoleApp228.exe
+C:\Users\User\source\repos\ConsoleApp228\bin\Release\ConsoleApp228.pdb
+C:\Users\User\source\repos\ConsoleApp228\obj\Release\ConsoleApp228.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\ConsoleApp228\obj\Release\ConsoleApp228.exe
+C:\Users\User\source\repos\ConsoleApp228\obj\Release\ConsoleApp228.pdb
+C:\Users\User\source\repos\ConsoleApp228\obj\Release\ConsoleApp228.csprojAssemblyReference.cache

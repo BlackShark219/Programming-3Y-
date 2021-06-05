@@ -1,0 +1,201 @@
+﻿@model TestMVC.Models.User
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Фото галерея</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            padding-top: .5em;
+            padding-bottom: .5em;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Список галерей</h3>
+        @if (ViewBag.LoggedIN)
+        {
+            <p>Привіт @Model.Login</p>
+            <a class="btn btn-primary button-style add-margin" href="@Url.Action("Quit","Home")">Вихід</a>
+        }
+        <table id="Tab1">
+            <tr>
+                @if (ViewBag.LoggedIN)
+                {
+                    <th>№</th>
+                }
+                <th>Назва галереї</th>
+                <th>  </th>
+            </tr>
+            @foreach (TestMVC.Models.GALLERY_LIST x in ViewBag.Gall)
+            {
+                <tr id="row_@x.ID">
+                    @if (ViewBag.LoggedIN)
+                    {
+                        <td>@x.Gallery_Number</td>
+
+                    }
+                    <td>@x.Gallery_Name</td>
+                    <td><a class="btn btn-primary button-style add-margin" href="@Url.Action("DisplayGal","Home",new {id=x.ID})">Show</a></td>
+                    @if (ViewBag.LoggedIN)
+                    {
+                        <td><a class="btn btn-primary button-style add-margin" id="up_@x.ID" onclick="UPGal(event)">UP</a></td>
+                        <td><a class="btn btn-primary button-style add-margin" id="down_@x.ID" onclick="DOWNGal(event)">DOWN</a></td>
+                        <td><a class="btn btn-primary button-style add-margin" id="delete_@x.ID" onclick="DeleteGal(event)">DELETE</a></td>
+                        <td><p style="color:red" hidden id="errorDOWN">You can't DOWN last</p></td>
+                    }
+
+                </tr>
+            }
+        </table>
+        @if (ViewBag.LoggedIN)
+        {
+            <hr />
+
+            <label>Назва галереї</label>
+            <input type="text" id="NG" />
+            <input type="submit" id="create" onclick="AddGallery()" class="btn btn-primary button-style add-margin" value="Створити" />
+            <p style="color:red" hidden id="error">Назва такої галереї або такий номер вже існує</p>
+        }
+    </div>
+    @{if (!ViewBag.LoggedIN)
+        {
+
+
+            <label>Логін</label>
+            <input type="text" id="Login" />
+            <label>Пароль</label>
+            <input type="password" id="Password" />
+            <input type="submit" id="enter" onclick="EnterCred()" class="btn btn-primary button-style add-margin" value="Вхід" />
+            <p style="color:red" hidden id="error">Комбінація логіна/пароля є недійсною</p>
+
+
+        }
+    }
+    @section scripts
+    {
+        <script type="text/javascript">
+        function EnterCred()
+        {
+            let url = "@Url.Action("Validate","Home")";
+            let data = { login: $("#Login").val(), password: $("#Password").val() }
+            $.getJSON(url,
+                    data
+                ,
+                function (response) {
+                    if (response[1]) {
+                        window.location.replace("/Home/Index/" + response[0]);
+
+                    }
+                    else {
+                        $("#enter").css("display","none");
+                        setTimeout(function() {
+                            $("#error").prop("hidden", false);
+                            $("#enter").css("display", "inline");
+                        }, 10000);
+                        }
+                });
+
+        }
+        function AddGallery()
+        {
+            let c;
+            var big = new Array();
+            let url = "@Url.Action("AddGalery","Home")";
+            let data = { Galname: $("#NG").val()}
+            $.getJSON(url, data,
+                function (response) {
+                    if (response[0])
+                    {
+                        c = response[2];
+                        let ind = c.indexOf(parseInt(response[3])) + 1;
+                        $("#Tab1 tr:nth-child(" + ind + ")").after('<tr id="row_'+response[1]+'"><td>' + response[3] + '</td><td>' + data.Galname + '</td><td><a class="btn btn-primary button-style add-margin" href=/Home/DisplayGal/' + response[1] + '>Show</a></td >'+
+                            '<td><a class="btn btn-primary button-style add-margin">UP</a></td>'+
+                            '<td><a class="btn btn-primary button-style add-margin">DOWN</a></td>'+
+                            '<td><a class="btn btn-primary button-style add-margin" id="delete_'+response[1]+'" onclick="DeleteGal(event)">DELETE</a></td></tr > ');
+                    }
+                    else
+                    {
+                        $("#error").prop("hidden", false);
+                    }
+                });
+        }
+
+            function DeleteGal(event)
+            {
+                let id = event.target.getAttribute("id").split("_")[1];
+                let url = "@Url.Action("DeleteGal", "Home")";
+                let data = {id:id}
+                console.log(id);
+                $.getJSON(url, data,
+                    function (response) {
+                        console.log(data.id);
+                        $('#Tab1 tr#row_'+ data.id).remove();
+                   });
+            }
+
+            function UPGal(event)
+            {
+                let id = event.target.getAttribute("id").split("_")[1];
+                console.log()
+                if ($('#Tab1 tr#row_' + id).index()==1)
+                {
+                    $('#Tab1 tr#row_' + id).append('<td id="Er" ><p style="color: red" id="errorUP">You cant UP first</p></td>');
+                    setTimeout(function () {
+                        $("#Er").remove();
+                    }, 2000);
+                    return;
+                }
+                let url = "@Url.Action("UPGal", "Home")";
+                var previd = $('#Tab1 tr#row_' + id).prev().attr("id").split("_")[1];
+                let data = { id: id, previd: previd }
+                console.log(id);
+                console.log(previd);
+                $.getJSON(url, data,
+                    function (response)
+                    {
+                        $('#Tab1 tr#row_' + previd).before($('#Tab1 tr#row_' + id));
+                        $('#Tab1 tr#row_' + id + ' td:first-child').replaceWith('<td>' + response[0] + '</td>');
+                        $('#Tab1 tr#row_' + previd + ' td:first-child').replaceWith('<td>' + response[1] + '</td>');
+                    });
+            }
+
+            function DOWNGal(event)
+            {
+                let id = event.target.getAttribute("id").split("_")[1];
+                if ($('#Tab1 tr#row_' + id).is(':last-child'))
+                {
+                    $('#Tab1 tr#row_' + id).append('<td id="Er" ><p style="color: red" id="errorUP">You cant DOWN last</p></td>');
+                    setTimeout(function () {
+                        $("#Er").remove();
+                    }, 2000);
+                    return;
+                }
+
+                    let url = "@Url.Action("DOWNGal", "Home")";
+                    var nextid = $('#Tab1 tr#row_' + id).next().attr("id").split("_")[1];
+                    let data = { id: id, nid: nextid }
+                    $.getJSON(url, data,
+                    function (response)
+                    {
+                        $('#Tab1 tr#row_' + nextid).after($('#Tab1 tr#row_' + id));
+                        $('#Tab1 tr#row_' + id + ' td:first-child').replaceWith('<td>' + response[0] + '</td>');
+                        $('#Tab1 tr#row_' + nextid + ' td:first-child').replaceWith('<td>' + response[1] + '</td>');
+                    });
+            }
+
+        </script>
+    }
+
+    </body>
+</html>

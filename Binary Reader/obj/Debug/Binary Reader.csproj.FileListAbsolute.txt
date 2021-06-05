@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Binary Reader\bin\Debug\Binary Reader.exe.config
+C:\Users\User\source\repos\Binary Reader\bin\Debug\Binary Reader.exe
+C:\Users\User\source\repos\Binary Reader\bin\Debug\Binary Reader.pdb
+C:\Users\User\source\repos\Binary Reader\obj\Debug\Binary Reader.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Binary Reader\obj\Debug\Binary Reader.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Binary Reader\obj\Debug\Binary Reader.exe
+C:\Users\User\source\repos\Binary Reader\obj\Debug\Binary Reader.pdb

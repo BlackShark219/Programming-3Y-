@@ -1,0 +1,167 @@
+﻿
+@model  TestMVC.Models.ViewModels.ViewModelUpload
+@{
+    ViewBag.Title = "DisplayGal";
+}
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+
+</head>
+
+<body>
+
+    <div>
+        <div>
+            <h2>@Model.Galname</h2>
+            <a class="btn btn-primary button-style add-margin" href="@Url.Action("Index","Home")">Back to Galleries</a>
+        </div>
+
+        @if (ViewBag.LoggedIN)
+        {
+            using (Html.BeginForm("Upload", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+
+            {<table>
+
+                    <tr>
+
+                        <td>File Upload:</td>
+
+                        <td>
+
+                            <input type="file" id="File_Upload" name="image" />
+
+                            <br />
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Image Description:</td>
+
+                        <td>
+                            @Html.EditorFor(m => m.Description)
+                        </td>
+                        <td>@Html.HiddenFor(m => m.Galname)</td>
+                        <td>@Html.HiddenFor(m => m.GalNum)</td>
+                        <td>@Html.HiddenFor(m => m.GalID)</td>
+
+                    </tr>
+
+                    <tr>
+
+
+                        <td>
+
+                            <br />
+
+                            <input type="submit" value="Upload" class="btn-default" />
+
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            }
+
+        }
+
+    </div>
+    <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Thumbnail Gallery</h1>
+
+    <hr class="mt-2 mb-5">
+    <div class="container">
+        <div class="row margin">
+            @foreach (TestMVC.Models.PICTURE_LIST x in ViewBag.Pictures)
+            {
+            <div id="pic_@x.ID" class="col-lg-3 col-md-3 col-sm-4 col-xs-6" style="margin-bottom:5px;margin-top:5px;">
+                <a href="@Url.Action("DisplayFull","Home",new {id=x.ID})"><img class="img-thumbnail img-fluid" src="@Url.Action("ShowMini","Home",new {id=x.ID})" title="@x.Description"></a>
+                @if (ViewBag.LoggedIN)
+                {
+                    <a class="btn btn-primary button-style add-margin img-container" id="up_@x.ID" onclick="UPPic(event)">UP</a>
+                    <a class="btn btn-primary button-style add-margin img-container" id="down_@x.ID" onclick="DOWNPic(event)">DOWN</a>
+                    <a class="btn btn-primary button-style add-margin img-container" id="delete_@x.ID" onclick="DeletePic(event)">DELETE</a>
+                }
+
+            </div>
+            }
+        </div>
+    </div>
+
+    @section scripts
+    {
+        <script type="text/javascript">
+
+            function DeletePic(event)
+            {
+                let id = event.target.getAttribute("id").split("_")[1];
+                let url = "@Url.Action("DeletePic", "Home")";
+                let data = {id:id}
+                console.log(id);
+                $.getJSON(url, data,
+                    function (response) {
+                        console.log(data.id);
+                        $('#pic_'+ data.id).remove();
+                   });
+            }
+
+             function UPPic(event)
+            {
+                let id = event.target.getAttribute("id").split("_")[1];
+                if ($('#pic_' + id).index() == 0)
+                {
+                     $('#pic_' + id).append('<p id="Er" style="color: red" id="errorUP">You cant UP first</p>');
+                    setTimeout(function () {
+                        $("#Er").remove();
+                    }, 2000);
+                     console.log("in if")
+                    return;
+                }
+                let url = "@Url.Action("UPPic", "Home")";
+                var previd = $('#pic_' + id).prev().attr("id").split("_")[1];
+                let data = { id: id, previd: previd }
+                console.log(id);
+                console.log(previd);
+                $.getJSON(url, data,
+                    function (response)
+                    {
+                        $('#pic_' + previd).before($('#pic_' + id));
+                    });
+            }
+
+            function DOWNPic(event)
+            {
+                let id = event.target.getAttribute("id").split("_")[1];
+                if ($('#pic_' + id).is(':last-child'))
+                {
+                    $('#pic_' + id).append('<p id="Er" style="color: red" id="errorUP">You cant DOWN last</p>');
+                    setTimeout(function () {
+                        $("#Er").remove();
+                    }, 2000);
+                    return;
+                }
+
+                    let url = "@Url.Action("DOWNPic", "Home")";
+                var nextid = $('#pic_' + id).next().attr("id").split("_")[1];
+                    let data = { id: id, nid: nextid }
+                    $.getJSON(url, data,
+                    function (response)
+                    {
+                        $('#pic_' + nextid).after($('#pic_' + id));
+                    });
+            }
+
+        </script>
+
+
+    }
+</body>
+
+</html>
+

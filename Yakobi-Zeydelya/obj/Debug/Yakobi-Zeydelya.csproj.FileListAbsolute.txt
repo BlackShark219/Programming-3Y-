@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Yakobi-Zeydelya\bin\Debug\Yakobi-Zeydelya.exe.config
+C:\Users\User\source\repos\Yakobi-Zeydelya\bin\Debug\Yakobi-Zeydelya.exe
+C:\Users\User\source\repos\Yakobi-Zeydelya\bin\Debug\Yakobi-Zeydelya.pdb
+C:\Users\User\source\repos\Yakobi-Zeydelya\obj\Debug\Yakobi-Zeydelya.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Yakobi-Zeydelya\obj\Debug\Yakobi-Zeydelya.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Yakobi-Zeydelya\obj\Debug\Yakobi-Zeydelya.exe
+C:\Users\User\source\repos\Yakobi-Zeydelya\obj\Debug\Yakobi-Zeydelya.pdb

@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\FileReader\bin\Debug\FileReader.exe.config
+C:\Users\User\source\repos\FileReader\bin\Debug\FileReader.exe
+C:\Users\User\source\repos\FileReader\bin\Debug\FileReader.pdb
+C:\Users\User\source\repos\FileReader\obj\Debug\FileReader.csprojAssemblyReference.cache
+C:\Users\User\source\repos\FileReader\obj\Debug\FileReader.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\FileReader\obj\Debug\FileReader.exe
+C:\Users\User\source\repos\FileReader\obj\Debug\FileReader.pdb

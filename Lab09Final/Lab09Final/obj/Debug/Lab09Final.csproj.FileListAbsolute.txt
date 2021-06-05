@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Lab09Final\Lab09Final\bin\Debug\Lab09Final.exe.config
+C:\Users\User\source\repos\Lab09Final\Lab09Final\bin\Debug\Lab09Final.exe
+C:\Users\User\source\repos\Lab09Final\Lab09Final\bin\Debug\Lab09Final.pdb
+C:\Users\User\source\repos\Lab09Final\Lab09Final\obj\Debug\Lab09Final.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Lab09Final\Lab09Final\obj\Debug\Lab09Final.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Lab09Final\Lab09Final\obj\Debug\Lab09Final.exe
+C:\Users\User\source\repos\Lab09Final\Lab09Final\obj\Debug\Lab09Final.pdb

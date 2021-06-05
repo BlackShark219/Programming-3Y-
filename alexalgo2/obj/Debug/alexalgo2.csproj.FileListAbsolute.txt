@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\alexalgo2\bin\Debug\alexalgo2.exe.config
+C:\Users\User\source\repos\alexalgo2\bin\Debug\alexalgo2.exe
+C:\Users\User\source\repos\alexalgo2\bin\Debug\alexalgo2.pdb
+C:\Users\User\source\repos\alexalgo2\obj\Debug\alexalgo2.csprojAssemblyReference.cache
+C:\Users\User\source\repos\alexalgo2\obj\Debug\alexalgo2.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\alexalgo2\obj\Debug\alexalgo2.exe
+C:\Users\User\source\repos\alexalgo2\obj\Debug\alexalgo2.pdb

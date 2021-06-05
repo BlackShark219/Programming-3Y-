@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\CAT\bin\Debug\CAT.exe.config
+C:\Users\User\source\repos\CAT\bin\Debug\CAT.exe
+C:\Users\User\source\repos\CAT\bin\Debug\CAT.pdb
+C:\Users\User\source\repos\CAT\obj\Debug\CAT.csprojAssemblyReference.cache
+C:\Users\User\source\repos\CAT\obj\Debug\CAT.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\CAT\obj\Debug\CAT.exe
+C:\Users\User\source\repos\CAT\obj\Debug\CAT.pdb

@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "DisplayFull";
+}
+
+<h2>DisplayFull</h2>
+<p>@Url.Action("ShowFull", "Home", new { id = ViewBag.ID })</p>
+<div class="container py-3">
+    <a class="btn btn-primary button-style add-margin" href="@Url.Action("DisplayGal","Home", new {id=ViewBag.GalID})">Back to Galleries</a>
+    <div class="row">
+        @if (ViewBag.ButtonP)
+        {
+            <a href="@Url.Action("DisplayFull","Home",new {id=ViewBag.Prev})" class="btn col-md-1">Show prevoius</a>
+        }
+        <img id="fullim" style="width:auto;max-height:70vh" src="@Url.Action("ShowFull","Home",new {id=ViewBag.ID})" class="img-fluid d-block rounded col-md-10">
+        @if (ViewBag.ButtonN)
+        {
+            <a href="@Url.Action("DisplayFull","Home",new {id=ViewBag.Next})" class="btn col-md-1">Show next</a>
+        }
+    </div>
+</div>
+
+
+

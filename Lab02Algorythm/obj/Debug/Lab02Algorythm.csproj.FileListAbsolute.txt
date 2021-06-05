@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Lab02Algorythm\bin\Debug\Lab02Algorythm.exe.config
+C:\Users\User\source\repos\Lab02Algorythm\bin\Debug\Lab02Algorythm.exe
+C:\Users\User\source\repos\Lab02Algorythm\bin\Debug\Lab02Algorythm.pdb
+C:\Users\User\source\repos\Lab02Algorythm\obj\Debug\Lab02Algorythm.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Lab02Algorythm\obj\Debug\Lab02Algorythm.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Lab02Algorythm\obj\Debug\Lab02Algorythm.exe
+C:\Users\User\source\repos\Lab02Algorythm\obj\Debug\Lab02Algorythm.pdb

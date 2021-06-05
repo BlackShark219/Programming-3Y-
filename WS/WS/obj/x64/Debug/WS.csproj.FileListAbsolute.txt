@@ -1,0 +1,16 @@
+C:\Users\User\source\repos\WS\WS\bin\x64\Debug\WS.exe.config
+C:\Users\User\source\repos\WS\WS\bin\x64\Debug\WS.exe
+C:\Users\User\source\repos\WS\WS\bin\x64\Debug\WS.pdb
+C:\Users\User\source\repos\WS\WS\bin\x64\Debug\EntityFramework.dll
+C:\Users\User\source\repos\WS\WS\bin\x64\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\source\repos\WS\WS\bin\x64\Debug\MySql.Data.dll
+C:\Users\User\source\repos\WS\WS\bin\x64\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\User\source\repos\WS\WS\bin\x64\Debug\EntityFramework.xml
+C:\Users\User\source\repos\WS\WS\bin\x64\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\source\repos\WS\WS\bin\x64\Debug\MySql.Data.xml
+C:\Users\User\source\repos\WS\WS\bin\x64\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\User\source\repos\WS\WS\obj\x64\Debug\WS.csprojAssemblyReference.cache
+C:\Users\User\source\repos\WS\WS\obj\x64\Debug\WS.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\WS\WS\obj\x64\Debug\WS.csproj.CopyComplete
+C:\Users\User\source\repos\WS\WS\obj\x64\Debug\WS.exe
+C:\Users\User\source\repos\WS\WS\obj\x64\Debug\WS.pdb

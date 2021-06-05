@@ -1,0 +1,28 @@
+C:\Users\Антон Мацишин\source\repos\lab5 var13\lab5 var13\bin\Debug\lab5 var13.exe.config
+C:\Users\Антон Мацишин\source\repos\lab5 var13\lab5 var13\bin\Debug\lab5 var13.exe
+C:\Users\Антон Мацишин\source\repos\lab5 var13\lab5 var13\bin\Debug\lab5 var13.pdb
+C:\Users\Антон Мацишин\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5 var13.csprojAssemblyReference.cache
+C:\Users\Антон Мацишин\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5_var13.Form1.resources
+C:\Users\Антон Мацишин\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5_var13.Properties.Resources.resources
+C:\Users\Антон Мацишин\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5_var13.Transform.resources
+C:\Users\Антон Мацишин\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5 var13.csproj.GenerateResource.cache
+C:\Users\Антон Мацишин\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5 var13.csproj.CoreCompileInputs.cache
+C:\Users\Антон Мацишин\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5 var13.exe
+C:\Users\Антон Мацишин\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5 var13.pdb
+C:\Users\Антон Мацишин\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5_var13.Output.resources
+C:\Users\Антон Мацишин\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5_var13.About.resources
+C:\Users\Антон Мацишин\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5_var13.Help.resources
+C:\Users\User\source\repos\lab5 var13\lab5 var13\bin\Debug\lab5 var13.exe.config
+C:\Users\User\source\repos\lab5 var13\lab5 var13\bin\Debug\lab5 var13.exe
+C:\Users\User\source\repos\lab5 var13\lab5 var13\bin\Debug\lab5 var13.pdb
+C:\Users\User\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5 var13.csprojAssemblyReference.cache
+C:\Users\User\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5_var13.About.resources
+C:\Users\User\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5_var13.Form1.resources
+C:\Users\User\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5_var13.Help.resources
+C:\Users\User\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5_var13.Output.resources
+C:\Users\User\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5_var13.Properties.Resources.resources
+C:\Users\User\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5_var13.Transform.resources
+C:\Users\User\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5 var13.csproj.GenerateResource.cache
+C:\Users\User\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5 var13.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5 var13.exe
+C:\Users\User\source\repos\lab5 var13\lab5 var13\obj\Debug\lab5 var13.pdb

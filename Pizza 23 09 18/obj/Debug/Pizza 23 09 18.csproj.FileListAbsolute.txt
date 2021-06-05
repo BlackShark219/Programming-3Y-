@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Pizza 23 09 18\bin\Debug\Pizza 23 09 18.exe.config
+C:\Users\User\source\repos\Pizza 23 09 18\bin\Debug\Pizza 23 09 18.exe
+C:\Users\User\source\repos\Pizza 23 09 18\bin\Debug\Pizza 23 09 18.pdb
+C:\Users\User\source\repos\Pizza 23 09 18\obj\Debug\Pizza 23 09 18.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Pizza 23 09 18\obj\Debug\Pizza 23 09 18.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Pizza 23 09 18\obj\Debug\Pizza 23 09 18.exe
+C:\Users\User\source\repos\Pizza 23 09 18\obj\Debug\Pizza 23 09 18.pdb
